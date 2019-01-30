@@ -2,8 +2,9 @@
 
 @section('content')
     @push('scripts')
-        <script src="{{asset('js/app.js')}}"></script>
+        <script src="{{asset('js/script.js')}}"></script>
     @endpush
+
     <h3>Личный кабинет</h3>
     <div class="commonContainer">
         <nav>

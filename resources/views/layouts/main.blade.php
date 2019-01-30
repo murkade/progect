@@ -10,7 +10,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/mainStyle.css') }}" rel="stylesheet">
     <!-- Scripts -->
-    <script src="{{ asset('js/script.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" ></script>
     @stack('scripts')
     <title>Auctions</title>
 </head>
@@ -50,6 +50,10 @@
 
     </div>
 </header>
- @yield("content")
+
+<div class="containerContent">
+    @yield("content")
+</div>
+
 </body>
 </html>
