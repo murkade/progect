@@ -12,15 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 });
 
-Route::get('/newAuction', function () {
-    return view('newAuction');
-});
-Route::get('/cabinet', function () {
-    return view('cabinet');
-});
+Route::get('/cabinet/newAuction', 'LotController@newLot')->name('newAuction');
+
+
+Route::get('/cabinet', 'CabinetController@show')->name('cabinet');
 
 Auth::routes();
 

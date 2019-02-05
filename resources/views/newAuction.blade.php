@@ -4,6 +4,7 @@
     <div class="containerContent">
         <h3>Создание нового лота</h3>
         <form action="" class="formAuction" type="post" enctype="multipart/form-data">
+            @csrf
             <div class="wrapLot">
                 <div class="leftContainer cont">
                     <div class="input_line">

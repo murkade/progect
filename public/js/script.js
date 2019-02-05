@@ -3,19 +3,21 @@
 $(document).ready(function () {
     var active;
     $('body').on('click', '.item_link', function (e) {
-        e.preventDefault();
-        var index=$(this).closest('.item').index();
-        if($(this).hasClass('after')){
-            if($('.item').eq(index).hasClass('active')){
-                $('.item').eq(index).removeClass('active');
-                return;
+        if(!$(this).hasClass('n_lot')){
+            e.preventDefault();
+            var index=$(this).closest('.item').index();
+            if($(this).hasClass('after')){
+                if($('.item').eq(index).hasClass('active')){
+                    $('.item').eq(index).removeClass('active');
+                    return;
+                }
             }
+            if($(this).hasClass('profile')) {
+                $('.pageContent').eq(index).addClass('active').siblings().removeClass('active');
+                $('.item_2').filter('.active').removeClass('active');
+            }
+            $('.item').eq(index).addClass('active').siblings().removeClass('active');
         }
-        if($(this).hasClass('profile')) {
-            $('.pageContent').eq(index).addClass('active').siblings().removeClass('active');
-            $('.item_2').filter('.active').removeClass('active');
-        }
-        $('.item').eq(index).addClass('active').siblings().removeClass('active');
 
     });
 

@@ -36,7 +36,7 @@
                 <li class="topMenuItem"><a href="" class="linkMenu">аукционы</a></li>
                 <li class="topMenuItem"><a href="" class="linkMenu">правила</a></li>
                 <li class="topMenuItem"><a href="" class="linkMenu">инфо</a></li>
-                <li class="topMenuItem"><a href="" class="linkMenu">кабинет</a></li>
+                <li class="topMenuItem"><a href="{{route('cabinet')}}" class="linkMenu">кабинет</a></li>
                 <li class="topMenuItem"><a href="" class="linkMenu">AD_panel</a></li>
             </ul>
             <div class="wrapTopLine">

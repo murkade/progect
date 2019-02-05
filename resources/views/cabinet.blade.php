@@ -31,7 +31,7 @@
                     </ul>
                 </li>
                 <li class="item" ><a href="" class="item_link profile">Профиль</a></li>
-                <li class="item"><a href="" class="item_link">Создать новый лот</a></li>
+                <li class="item"><a href="{{route('newAuction')}}" class="item_link n_lot">Создать новый лот</a></li>
             </ul>
         </nav>
         <div class="menuContent">

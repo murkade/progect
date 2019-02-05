@@ -19,4 +19,20 @@ class User extends Model
         }
         return false;
     }
+
+    public function receivedMessages(){
+        return $this->hasMany(Message::class, 'receiver_id');
+    }
+
+    public function sentMessages(){
+        return $this->hasMany(Message::class, 'user_id');
+    }
+
+    public function lots(){
+        return $this->hasMany(Lot::class, 'author_id');
+    }
+
+    public function rates(){
+        return $this->hasMany(Rate::class, 'user_id');
+    }
 }
